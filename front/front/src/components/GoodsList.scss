@@ -1,0 +1,50 @@
+.goods-list {
+  margin-top: 20px;
+}
+
+.goods-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.goods-card {
+  background: #f8f8f8;
+  border-radius: 10px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  img {
+    width: 100%;
+    max-height: 200px;
+    object-fit: contain;
+    margin-bottom: 12px;
+    border-radius: 8px;
+  }
+
+  h3 {
+    margin: 8px 0;
+    font-size: 18px;
+  }
+
+  p {
+    margin: 4px 0;
+    font-weight: bold;
+  }
+
+  button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    background-color: #0077ff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+
+    &:hover {
+      background-color: #005edb;
+    }
+  }
+}
